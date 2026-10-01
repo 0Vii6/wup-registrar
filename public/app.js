@@ -345,7 +345,7 @@
           { key: 'all', label: 'All', icon: 'fa-solid fa-box-archive' },
           { key: 'pending', label: 'Pending', icon: 'fa-solid fa-hourglass-half' },
           { key: 'processing', label: 'In-Processing', icon: 'fa-solid fa-print' },
-          { key: 'ready', label: 'Claim', icon: 'fa-solid fa-square-check' },
+          { key: 'ready', label: 'Ready to Claim', icon: 'fa-solid fa-square-check' },
           { key: 'claimed', label: 'Claimed', icon: 'fa-solid fa-box' }
         ];
         nav.innerHTML = items.map(it => `
