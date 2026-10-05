@@ -655,20 +655,20 @@
 
       tbody.innerHTML = list.map(req => `
         <tr class="hover:bg-slate-50">
-          <td class="px-4 py-3.5">
+          <td class="px-4 py-3.5 whitespace-nowrap">
             <div class="font-bold text-slate-800 font-mono text-xs">${req.ref}</div>
             <div class="text-[11px] text-slate-400">${req.dateSubmitted}</div>
           </td>
-          <td class="px-4 py-3.5">
+          <td class="px-4 p y-3.5">
             <div class="font-semibold text-slate-800">${req.studentName}</div>
             <div class="text-[11px] text-slate-400 font-mono">${req.studentId}</div>
           </td>
-          <td class="px-4 py-3.5 text-xs text-slate-600">${req.items.map(i => `${i.copies}x${i.name}`).join(', ')}</td>
-          <td class="px-4 py-3.5 text-xs text-authv font-semibold"><i class="fa-solid fa-paperclip mr-1"></i>Attached</td>
-          <td class="px-4 py-3.5 text-xs font-mono">${req.orNumber}</td>
-          <td class="px-4 py-3.5">${getStatusBadge(req.status)}</td>
+          <td class="px-4 py-3.5 text-xs text-slate-600 w-[400px] max-w-[200px] break-words">${req.items.map(i => `${i.copies}x${i.name}`).join(', ')}</td>
+          <td class="px-4 py-3.5 text-xs text-authv font-semibold whitespace-nowrap"><i class="fa-solid fa-paperclip mr-1"></i>Attached</td>
+          <td class="px-4 py-3.5 text-xs font-mono whitespace-nowrap">${req.orNumber}</td>
+          <td class="px-4 py-3.5 whitespace-nowrap min-w-[150px]">${getStatusBadge(req.status)}</td>
           <td class="px-4 py-3.5 text-right">
-            <button onclick="openStaffReviewModal('${req.ref}')" class="px-3 py-1.5 text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full">
+            <button onclick="openStaffReviewModal('${req.ref}')" class="px-3 py-1.5 text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full whitespace-nowrap">
               <i class="fa-solid fa-magnifying-glass mr-1"></i> Inspect
             </button>
           </td>

@@ -82,8 +82,9 @@ function seed() {
   const students = [
     { id: 'WUP-24-1122-112', name: 'Dave Sabite', course: 'BS Information Technology', phone: '' },
     { id: 'WUP-24-1123-132', name: 'Joshua Lleva', course: 'BS Information Technology', phone: '' },
-    { id: 'WUP-24-2045-881', name: 'Kiffy Perry', course: 'BS Business Administration', phone: '' },
+    { id: 'WUP-24-2045-881', name: 'Justine Abello', course: 'BS Business Administration', phone: '' },
     { id: 'WUP-23-0941-008', name: 'Daphne Carvajal', course: 'BS Nursing', phone: '' }
+    { id: 'WUP-11-1111-111', name: 'Demo', course: 'BS Information Technology', phone: '' }
   ];
   students.forEach(s => {
     // default password = the numeric part of their ID (e.g. "24-1122-112"), same as before, now hashed.
